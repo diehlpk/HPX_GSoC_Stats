@@ -31,7 +31,7 @@ p2 = plt.bar(ind, fails, width)
 plt.ylabel('Students')
 plt.xlabel('Year')
 plt.title('Students per year')
-plt.xticks(ind + 0.2, year)
+plt.xticks(ind , year)
 plt.yticks(np.arange(0, max(all)+2, 1))
 plt.legend((p1[0], p2[0]), ('All', 'Fail'),loc=2)
 
