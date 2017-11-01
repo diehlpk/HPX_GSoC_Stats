@@ -33,6 +33,6 @@ plt.xlabel('Year')
 plt.title('Students per year')
 plt.xticks(ind , year)
 plt.yticks(np.arange(0, max(all)+2, 1))
-plt.legend((p1[0], p2[0]), ('All', 'Fail'),loc=2)
+plt.legend((p1[0], p2[0]), ('Pass', 'Fail'),loc=2)
 
 plt.savefig('students_per_year.png')
