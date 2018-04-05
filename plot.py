@@ -23,6 +23,7 @@ year = column(data,0)
 all = column(data,1)
 fails = column(data,2)
 
+# Students per year
 
 ind = np.arange(len(year)) 
 width = 0.35      
@@ -41,9 +42,10 @@ plt.savefig('students_per_year.png', format='png', dpi=150)
 
 plt.close()
 
+# Pull requests per year
 
-request = column(data,4)
-merged = column(data,5)
+request = column(data,3)
+merged = column(data,4)
 
 ind = np.arange(len(year)) 
 width = 0.35      
@@ -60,3 +62,24 @@ plt.yticks(np.arange(0, max(request)+2, 5))
 plt.legend((p1[0], p2[0]), ('Requested', 'Merged'),loc=2)
 
 plt.savefig('pull_per_year.png', format='png', dpi=150)
+
+plt.close()
+
+# Applications per year
+
+applications = column(data,5)
+ind = np.arange(len(year)) 
+
+width = 0.35      
+
+p1 = plt.bar(ind, applications, width, color='#d62728')
+plt.gcf().subplots_adjust(bottom=0.15)
+
+plt.ylabel('Applications')
+plt.xlabel('Year')
+plt.title('Amount of applications')
+plt.xticks(ind , year)
+plt.yticks(np.arange(0, max(request)+2, 5))
+#plt.legend((p1[0]), ('Applications'),loc=2)
+
+plt.savefig('applications_per_year.png', format='png', dpi=150)
