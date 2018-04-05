@@ -80,6 +80,5 @@ plt.xlabel('Year')
 plt.title('Amount of applications')
 plt.xticks(ind , year)
 plt.yticks(np.arange(0, max(request)+2, 5))
-#plt.legend((p1[0]), ('Applications'),loc=2)
 
 plt.savefig('applications_per_year.png', format='png', dpi=150)
