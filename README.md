@@ -1,0 +1,1 @@
+In this repo we collect some statistics about the [Google Summer of Code](https://summerofcode.withgoogle.com/) program within the [Ste||ar Group](https://stellar-group.org). The results are published [here](https://stellar-group.org/2017/11/google-summer-of-code-statistic/). 
