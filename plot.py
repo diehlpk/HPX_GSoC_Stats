@@ -75,7 +75,7 @@ width = 0.35
 p1 = plt.bar(ind, applications, width, color='#d62728')
 plt.gcf().subplots_adjust(bottom=0.15)
 
-plt.ylabel('Applications')
+plt.ylabel('Number of applications')
 plt.xlabel('Year')
 plt.title('Amount of applications')
 plt.xticks(ind , year)
