@@ -7,9 +7,9 @@ def column(matrix, i):
 
 data = []
 
-with open('data.dat', 'rb') as csvfile:
+with open('data.dat', 'r') as csvfile:
 	spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-	spamreader.next()
+	next(spamreader)
 	for row in spamreader:
 		data.append(np.array(row,dtype=int))
 		
