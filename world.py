@@ -13,7 +13,7 @@ worldmap_chart.add('Students', {
   'cn': 1,
   'de': 4,
   'eg': 1,
-  'in': 9,
+  'in': 11,
   'kr': 1,
   'ru': 1,
   'sg': 1,
